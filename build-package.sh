@@ -488,7 +488,7 @@ while (($# >= 1)); do
 			fi
 			;;
 		-I)
-			if [ "$TERMUX_PREFIX" != "/data/data/com.termux/files/usr" ]; then
+			if [ "$TERMUX_PREFIX" != "/data/data/com.itsaky.androidide/files/usr" ]; then
 				termux_error_exit "./build-package.sh: option '-I' is available only when TERMUX_APP_PACKAGE is 'com.termux'"
 			else
 				export TERMUX_INSTALL_DEPS=true
